@@ -1,0 +1,124 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background : linear-gradient(to right, rgb(138, 160, 193), rgb(22, 230, 233));
+}
+.box{
+    width: 30vw;
+    height: 55vh;
+    background : linear-gradient(to right, rgb(50, 207, 191), rgb(17, 198, 211));
+    border: 1.8px solid gray;
+    border-radius: 15px;
+    height: auto;
+    min-height: 550px;
+}
+.head{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size : 3rem;
+    color : rgb(50, 58, 61);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    min-height: 100px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background : linear-gradient(to right, rgb(35, 230, 244), rgb(178, 188, 184));
+}
+.in{
+    width : 40%;
+    height : 45%;
+    min-height: 50px;
+    text-align: center;
+    margin : 0 20px 0 0;
+    border-radius: 29px;
+    font-size: 1.5rem;
+}
+.ss{
+    min-height: 50px;
+    font-size: 1.5rem;
+    width : 20%;
+    height : 50%;
+    border-radius: 29px;
+    cursor : pointer;
+}
+.ss:hover{
+    background-color: rgb(223, 218, 218);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    width: 100%;
+    background : linear-gradient(to right, rgb(50, 207, 191), rgb(17, 198, 211));
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: auto;
+}
+.card h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+.card h2{
+    font-size: 35px;
+    font-weight: 800;
+    color : rgb(3, 72, 76)
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding : 0 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.humidity,.wind{
+    font-size: 150%;
+    margin-bottom: -6px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%; 
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .in {
+        width: 55%; 
+        font-size: 1.2rem; 
+    }
+
+    .ss {
+        width: 30%;  
+        font-size: 1.1rem;
+    }
+
+    .head {
+        font-size: 2rem; 
+    }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+}
